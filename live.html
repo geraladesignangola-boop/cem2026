@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ao Vivo — CEM | Congresso de Evangelismo e Missões</title>
+  <meta name="description" content="Assiste ao vivo ao Congresso de Evangelismo e Missões. Transmissão direta do CEM no Lubango, Angola.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✝</text></svg>">
+  <link rel="stylesheet" href="css/style.css?v=5">
+  <style>
+    .live-container { max-width: 900px; margin: 0 auto; }
+    .live-embed { position: relative; width: 100%; aspect-ratio: 16/9; background: #000; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
+    .live-embed iframe { width: 100%; height: 100%; border: 0; }
+    .live-status { display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 69, 0, 0.12); border: 1px solid var(--border-gold); padding: 6px 16px; border-radius: 100px; font-size: 0.85rem; font-weight: 600; color: var(--gold); margin-bottom: 1.5rem; }
+    .live-status .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--gold); animation: pulse-dot 1.5s ease-in-out infinite; }
+    @keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+    .live-info { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+    .live-info-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+    .live-info-card h3 { font-size: 1rem; margin-bottom: 8px; color: var(--gold); }
+    .live-info-card p { font-size: 0.9rem; margin: 0; }
+    .live-info-card .day-list { margin-top: 12px; }
+    .live-info-card .day-list li { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+    .live-info-card .day-list li:last-child { border-bottom: 0; }
+    .live-info-card .day-list .time { color: var(--gold); font-weight: 600; }
+    .live-placeholder { text-align: center; padding: 60px 20px; }
+    .live-placeholder .icon { font-size: 3rem; margin-bottom: 16px; opacity: 0.5; }
+    .live-placeholder h3 { margin-bottom: 8px; }
+    .live-placeholder p { max-width: 400px; margin: 0 auto; }
+    .fb-note { margin-top: 32px; padding: 16px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; font-size: 0.85rem; }
+    .fb-note code { color: var(--gold); font-size: 0.8rem; word-break: break-all; }
+    @media (max-width: 640px) { .live-info { grid-template-columns: 1fr; } .live-embed { aspect-ratio: 4/3; } }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">C</span>
+        <span class="logo-text">Congresso de Evangelismo <small>e Missões</small></span>
+      </a>
+      <nav class="nav-desktop">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="congresso.html">Programa</a>
+        <a href="parcerias.html">Parceiros</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="live.html" class="active">Ao Vivo</a>
+        <a href="inscricao.html" class="btn-small">Inscrições</a>
+      </nav>
+      <button class="hamburger" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay">
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="congresso.html">Programa</a>
+      <a href="parcerias.html">Parceiros</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="live.html" class="active">Ao Vivo</a>
+      <a href="inscricao.html">Inscrições</a>
+    </nav>
+  </div>
+
+  <div class="page-hero">
+    <div class="hero-rings">
+      <div class="hero-ring"></div>
+      <div class="hero-ring r2"></div>
+      <div class="hero-ring r3"></div>
+    </div>
+    <div class="container">
+      <span class="hero-badge">Transmissão</span>
+      <h1>Ao Vivo<br>do CEM 2026</h1>
+    </div>
+  </div>
+
+  <section class="page-section">
+    <div class="container live-container">
+      <div class="live-status">
+        <span class="dot"></span>
+        <span>Em Direto</span>
+      </div>
+
+      <div class="live-embed">
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https://web.facebook.com/profile.php?id=61575947845856&show_text=false&width=734&height=413&appId" width="734" height="413" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      </div>
+
+      <div class="fb-note">
+        <strong>Nota:</strong> Se a transmissão não aparecer, visita diretamente a página do Facebook da <a href="https://web.facebook.com/profile.php?id=61575947845856" target="_blank" style="color:var(--gold);text-decoration:underline;">CEM — Congresso de Evangelismo e Missões</a> para assistir.
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section alt">
+    <div class="container live-container">
+      <div class="text-center" style="margin-bottom:40px;">
+        <span class="section-label">Horários</span>
+        <h2>Quando assistir</h2>
+        <p style="max-width:500px;margin:0 auto;">A transmissão ao vivo cobre os principais momentos do CEM 2026.</p>
+      </div>
+      <div class="live-info">
+        <div class="live-info-card">
+          <h3>Sessões Principais</h3>
+          <ul class="day-list">
+            <li><span>Culto de Abertura (Dom)</span><span class="time">17:00</span></li>
+            <li><span>Ensino Matinal (Seg–Qua)</span><span class="time">08:00</span></li>
+            <li><span>Ensino Vespertino (Seg–Qua)</span><span class="time">14:00</span></li>
+            <li><span>Noite de Louvor (Qui)</span><span class="time">18:00</span></li>
+            <li><span>Celebração de Missões (Sáb)</span><span class="time">09:00</span></li>
+            <li><span>Encerramento (Dom)</span><span class="time">16:00</span></li>
+          </ul>
+        </div>
+        <div class="live-info-card">
+          <h3>Sobre a Transmissão</h3>
+          <p style="margin-bottom:12px;">Todas as sessões principais do CEM são transmitidas ao vivo pelo Facebook do CEM.</p>
+          <p style="margin-bottom:12px;">Podes assistir diretamente aqui nesta página ou na página oficial do Facebook.</p>
+          <p>As gravações ficarão disponíveis após o evento para quem não puder acompanhar ao vivo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section cta-section">
+    <div class="container text-center">
+      <h2>Ora e age por Angola</h2>
+      <p>O CEM 2026 está a acontecer. Convida outros a assistir.</p>
+      <a href="https://web.facebook.com/profile.php?id=61575947845856" target="_blank" class="btn btn-primary">Seguir no Facebook</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">C</span>
+            <span class="logo-text">Congresso de Evangelismo <small>e Missões</small></span>
+          </a>
+          <p>Mobilizar, capacitar e enviar crentes para cumprir a Grande Comissão. Igreja Getsêmani, Lubango, Angola.</p>
+          <div class="footer-social">
+            <a href="https://facebook.com/cemcongresso" target="_blank" aria-label="Facebook">FB</a>
+            <a href="https://instagram.com/cemcongresso" target="_blank" aria-label="Instagram">IG</a>
+            <a href="https://youtube.com/@cemcongresso" target="_blank" aria-label="YouTube">YT</a>
+            <a href="https://wa.me/+244900000000" target="_blank" aria-label="WhatsApp">WP</a>
+          </div>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="congresso.html">Programa</a></li>
+            <li><a href="parcerias.html">Parceiros</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="live.html">Ao Vivo</a></li>
+            <li><a href="inscricao.html">Inscrições</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contactos</h4>
+          <ul>
+            <li><span class="ci">→</span> Igreja Getsêmani, Lubango</li>
+            <li><span class="ci">→</span> +244 900 000 000</li>
+            <li><span class="ci">→</span> cem@igrejagetsemani.org</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 CEM — Congresso de Evangelismo e Missões</span>
+        <span>Igreja Getsêmani • Lubango, Huíla, Angola</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

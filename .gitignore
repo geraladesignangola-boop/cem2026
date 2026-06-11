@@ -1,0 +1,13 @@
+# Media
+Gravação de Tela *.mp4
+video_frames/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

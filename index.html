@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEM — Congresso de Evangelismo e Missões | Igreja Getsêmani</title>
+  <meta name="description" content="Join the CEM — Congresso de Evangelismo e Missões. 7 days of preaching, worship, intercession and street evangelism. Lubango, Angola.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✝</text></svg>">
+  <link rel="stylesheet" href="css/style.css?v=5">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="header-left">
+        <a href="index.html" class="logo">
+          <img src="images/2026.png" alt="CEM 2026 Logo" class="logo-img">
+        </a>
+        <div class="mini-countdown" id="miniCountdown">
+          <span id="m-cd-days">00</span><span class="m-cd-l">d</span>
+          <span class="m-cd-s">:</span>
+          <span id="m-cd-hours">00</span><span class="m-cd-l">h</span>
+          <span class="m-cd-s">:</span>
+          <span id="m-cd-minutes">00</span><span class="m-cd-l">m</span>
+          <span class="m-cd-s">:</span>
+          <span id="m-cd-seconds">00</span><span class="m-cd-l">s</span>
+        </div>
+      </div>
+      <nav class="nav-desktop">
+        <a href="index.html" class="active">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="congresso.html">Programa</a>
+        <a href="parcerias.html">Parceiros</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="live.html">Ao Vivo</a>
+        <a href="inscricao.html" class="btn-small">Inscrições</a>
+      </nav>
+      <button class="hamburger" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay">
+    <nav>
+      <a href="index.html" class="active">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="congresso.html">Programa</a>
+      <a href="parcerias.html">Parceiros</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="live.html">Ao Vivo</a>
+      <a href="inscricao.html">Inscrições</a>
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="hero-map" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="dotPattern" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+          <circle cx="8" cy="8" r="2.5" fill="#FF4500" opacity="0.18"/>
+        </pattern>
+      </defs>
+      <g fill="url(#dotPattern)">
+        <!-- North America -->
+        <polygon points="150,60 200,45 250,55 280,50 310,65 340,80 330,105 340,130 320,160 310,185 290,210 270,230 250,240 230,250 210,260 190,250 170,230 150,210 130,195 120,170 110,140 105,110 110,80" />
+        <!-- South America -->
+        <polygon points="255,265 285,255 310,270 325,290 330,315 320,340 310,370 295,410 285,450 280,490 275,530 270,545 260,550 250,545 240,530 235,490 230,450 225,410 220,370 225,340 230,315 240,290" />
+        <!-- Europe -->
+        <polygon points="480,55 500,45 530,40 555,45 575,50 590,65 600,85 610,105 600,125 590,140 570,150 550,155 530,160 510,155 490,145 475,130 460,110 455,90 460,70" />
+        <!-- Africa -->
+        <polygon points="475,185 505,170 535,175 565,185 585,210 590,240 585,270 575,305 560,340 545,375 530,410 515,450 505,490 500,520 495,540 485,545 475,540 465,515 460,480 455,440 450,400 445,360 440,320 445,280 450,245 460,215" />
+        <!-- Asia -->
+        <polygon points="595,55 630,45 665,40 700,35 735,40 770,45 805,50 840,60 875,70 910,85 945,100 980,120 1010,145 1040,170 1060,195 1070,215 1065,235 1050,255 1030,275 1010,295 985,315 955,330 925,345 900,350 875,355 855,350 835,340 815,325 795,310 775,295 755,280 735,270 715,260 695,250 675,240 655,230 635,215 615,200 600,180 585,160 580,140 575,120 575,100 580,80 585,65" />
+        <!-- Australia -->
+        <polygon points="945,395 980,385 1015,390 1045,405 1065,425 1075,450 1065,475 1050,495 1025,510 1000,515 970,510 945,495 925,475 920,450 925,420" />
+        <!-- Greenland -->
+        <polygon points="285,40 310,35 335,40 350,50 340,65 320,75 300,75 280,65 270,55" />
+        <!-- UK -->
+        <polygon points="450,55 465,50 475,60 470,75 455,80 445,70" />
+        <!-- Japan -->
+        <polygon points="875,145 885,155 890,170 885,185 875,195 865,190 860,175 865,160" />
+        <!-- Madagascar -->
+        <polygon points="555,480 565,475 575,485 575,500 565,515 555,510 550,495" />
+      </g>
+    </svg>
+    <div class="container">
+      <span class="hero-badge">Terceira Edição</span>
+      <p class="hero-date hero-line line-1">22 – 28 JUN 2026 • LUBANGO, HUÍLA • ANGOLA</p>
+      <h1 class="hero-title">
+        <span class="hero-text-group">
+          <span class="hero-line line-2">CONGRESSO DE</span>
+          <span class="hero-line line-3">EVANGELISMO E</span>
+          <span class="hero-line line-4"><span class="hl">Missões</span></span>
+        </span>
+        <img src="images/2026.png" alt="2026" class="hero-year">
+      </h1>
+      <p class="hero-sub hero-line line-5">O maior encontro de evangelismo de Angola. 7 dias de ensino, adoração, intercessão e evangelismo prático nas ruas.</p>
+      <div class="hero-actions">
+        <a href="inscricao.html" class="btn btn-primary">Garante o teu lugar</a>
+        <a href="sobre.html" class="btn btn-outline">Saber mais</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN TIMER -->
+  <div class="countdown-bar">
+    <div class="container countdown-container">
+      <h3 class="countdown-phrase">FALTAM APENAS</h3>
+      <div class="countdown-wrapper" id="countdown">
+        <div class="cd-item"><span class="cd-num" id="cd-days">00</span><span class="cd-label">Dias</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-item"><span class="cd-num" id="cd-hours">00</span><span class="cd-label">Horas</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-item"><span class="cd-num" id="cd-minutes">00</span><span class="cd-label">Min</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-item"><span class="cd-num" id="cd-seconds">00</span><span class="cd-label">Seg</span></div>
+      </div>
+      <h3 class="countdown-phrase">PARA O MAIOR IMPACTO <span class="hl">Missionário</span></h3>
+    </div>
+  </div>
+
+  <!-- FEATURED SPEAKERS -->
+  <section class="section section-speakers">
+    <div class="container">
+      <p class="section-label">APRENDE COM OS PREGADORES</p>
+      <h2 class="section-title">O melhor ensino bíblico<br>de Angola</h2>
+      <p class="section-desc">O CEM reúne pregadores e líderes que estão na linha da frente do evangelismo em Angola e além-fronteiras.</p>
+      <div class="brands">
+        <span>IGREJA GETSÊMANI</span>
+        <span>REDE ANGOLANA</span>
+        <span>MISSÕES AFRICA</span>
+        <span>JOVENS LÍDERES</span>
+        <span>EVANGELISMO NACIONAL</span>
+        <span>& MAIS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 DAYS GRID -->
+  <section class="section section-days section-light" data-reveal>
+    <div class="container">
+      <p class="section-label">DIA A DIA</p>
+      <h2 class="section-title">7 Dias para mergulhar<br>no que realmente importa</h2>
+      <p class="section-desc">Cada dia do CEM é desenhado para fortalecer a tua fé, equipar-te com ferramentas práticas e lançar-te na missão.</p>
+    </div>
+    <div class="container days-grid">
+      <div class="day-card lotado" data-reveal>
+        <span class="day-badge">Abertura</span>
+        <span class="day-label">Domingo</span>
+        <h3>Culto de Abertura</h3>
+        <p>Iniciamos com um culto solene de consagração. Adoração, Palavra e Santa Ceia. O tom espiritual para toda a semana é estabelecido.</p>
+        <span class="day-meta">Igreja Getsêmani • 17h</span>
+        <a href="congresso.html" class="day-cta">Mais info →</a>
+      </div>
+      <div class="day-card" data-reveal>
+        <span class="day-badge cheio-badge">Cheio</span>
+        <span class="day-label">Segunda</span>
+        <h3>Sessões de Ensino</h3>
+        <p>Manhãs e tardes dedicadas ao ensino bíblico profundo sobre evangelismo, missões, liderança e discipulado.</p>
+        <span class="day-meta">Auditório Principal • 8h–17h</span>
+        <a href="congresso.html" class="day-cta">Mais info →</a>
+      </div>
+      <div class="day-card" data-reveal>
+        <span class="day-badge cheio-badge">Cheio</span>
+        <span class="day-label">Terça</span>
+        <h3>Sessões de Ensino</h3>
+        <p>Continuação do ensino bíblico profundo. Temas sobre evangelismo, missões, liderança e discipulado.</p>
+        <span class="day-meta">Auditório Principal • 8h–17h</span>
+        <a href="congresso.html" class="day-cta">Mais info →</a>
+      </div>
+      <div class="day-card" data-reveal>
+        <span class="day-badge cheio-badge">Cheio</span>
+        <span class="day-label">Quarta</span>
+        <h3>Sessões de Ensino</h3>
+        <p>Último dia de sessões de ensino. Consolidação dos temas e preparação espiritual para os dias seguintes.</p>
+        <span class="day-meta">Auditório Principal • 8h–17h</span>
+        <a href="congresso.html" class="day-cta">Mais info →</a>
+      </div>
+      <div class="day-card" data-reveal>
+        <span class="day-badge cheio-badge">Cheio</span>
+        <span class="day-label">Quinta</span>
+        <h3>Noite de Louvor e Intercessão</h3>
+        <p>Uma noite inteira dedicada à adoração profética e à intercessão pelas nações, por Angola e pelos campos missionários.</p>
+        <span class="day-meta">Igreja Getsêmani • 18h–23h</span>
+        <a href="congresso.html" class="day-cta">Mais info →</a>
+      </div>
+      <div class="day-card last" data-reveal>
+        <span class="day-badge">Últimas Vagas</span>
+        <span class="day-label">Sexta</span>
+        <h3>Evangelismo nas Ruas ★</h3>
+        <p>O ponto alto do CEM. Todos os participantes saem às ruas, mercados, bairros e instituições para evangelizar o Lubango.</p>
+        <span class="day-meta">Saída da Igreja • 7h</span>
+        <a href="congresso.html" class="day-cta">Mais info →</a>
+      </div>
+      <div class="day-card" data-reveal>
+        <span class="day-badge cheio-badge">Cheio</span>
+        <span class="day-label">Sábado</span>
+        <h3>Celebração de Missões</h3>
+        <p>Dia focado no envio missionário. Apresentação de campos, testemunhos e desafio. Ofertas missionárias.</p>
+        <span class="day-meta">Igreja Getsêmani • 9h–17h</span>
+        <a href="congresso.html" class="day-cta">Mais info →</a>
+      </div>
+      <div class="day-card last" data-reveal>
+        <span class="day-badge">Envio</span>
+        <span class="day-label">Domingo</span>
+        <h3>Encerramento e Envio</h3>
+        <p>Culto de consagração e envio. Cada participante é comissionado para ser sal e luz onde quer que for. Grande final.</p>
+        <span class="day-meta">Igreja Getsêmani • 16h</span>
+        <a href="congresso.html" class="day-cta">Mais info →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER OFICIAL -->
+  <section class="section section-banner" data-reveal>
+    <img src="images/capa_banner.png" alt="CEM - Congresso de Evangelismo e Missões" class="banner-img">
+  </section>
+
+  <!-- CURATED SPEAKERS -->
+  <section class="section section-curated" data-reveal>
+    <div class="container">
+      <p class="section-label">PREGADORES</p>
+      <h2 class="section-title">Curado para o que importa<br>agora na Igreja</h2>
+      <p class="section-desc">Cada voz no palco é selecionada pelo tema que pode entregar de forma única. Pregadores nacionais e internacionais alinhados com os desafios que a igreja angolana enfrenta hoje.</p>
+    </div>
+    <div class="container">
+      <div class="speakers-grid">
+        <div class="speaker-card" data-reveal>
+          <div class="speaker-photo">
+            <img src="images/pregadores/Mata_Mourisca.png" class="speaker-img" alt="Mata Mourisca">
+          </div>
+          <div class="speaker-info">
+            <h4>Mata Mourisca</h4>
+            <span class="speaker-role">Anfitrião</span>
+            <span class="speaker-org">Igreja Getsêmani</span>
+          </div>
+          <p>Fundador do CEM, pastor presidente da Igreja Getsêmani. Voz profética para a nação.</p>
+        </div>
+        <div class="speaker-card" data-reveal>
+          <div class="speaker-photo">
+            <img src="images/pregadores/01.png" class="speaker-img" alt="Edgar Rosário">
+          </div>
+          <div class="speaker-info">
+            <h4>Edgar Rosário</h4>
+            <span class="speaker-role">Pregador Convidado</span>
+            <span class="speaker-org">CEM</span>
+          </div>
+          <p>Referência no ensino bíblico e evangelismo em Angola.</p>
+        </div>
+        <div class="speaker-card" data-reveal>
+          <div class="speaker-photo">
+            <img src="images/pregadores/02.png" class="speaker-img" alt="Caridade Muleca">
+          </div>
+          <div class="speaker-info">
+            <h4>Caridade Muleca</h4>
+            <span class="speaker-role">Pregador Convidado</span>
+            <span class="speaker-org">CEM</span>
+          </div>
+          <p>Pela 2.ª vez na lista de pregadores do CEM. Dedicado com mais de 15 anos no ensino e ministério cristão.</p>
+        </div>
+        <div class="speaker-card" data-reveal>
+          <div class="speaker-photo">
+            <img src="images/pregadores/03.png" class="speaker-img" alt="HD Yuri Monteiro">
+          </div>
+          <div class="speaker-info">
+            <h4>HD Yuri Monteiro</h4>
+            <span class="speaker-role">Evangelista</span>
+            <span class="speaker-org">CEM</span>
+          </div>
+          <p>Evangelista com ministério de impacto na juventude.</p>
+        </div>
+        <div class="speaker-card" data-reveal>
+          <div class="speaker-photo">
+            <img src="images/pregadores/04.png" class="speaker-img" alt="Profeta Malaquias Milagre">
+          </div>
+          <div class="speaker-info">
+            <h4>Profeta Malaquias Milagre</h4>
+            <span class="speaker-role">Preletor</span>
+            <span class="speaker-org">CEM</span>
+          </div>
+          <p>Uma voz dedicada ao ensino e expansão do Reino nas comunidades.</p>
+        </div>
+        <div class="speaker-card" data-reveal>
+          <div class="speaker-photo">
+            <img src="images/pregadores/05.png" class="speaker-img" alt="Apostolo Barish">
+          </div>
+          <div class="speaker-info">
+            <h4>Apostolo Barish</h4>
+            <span class="speaker-role">Preletor</span>
+            <span class="speaker-org">CEM</span>
+          </div>
+          <p>Líder influente com forte dedicação ao discipulado e missões locais.</p>
+        </div>
+        <div class="speaker-card" data-reveal>
+          <div class="speaker-photo">
+            <img src="images/pregadores/06.png" class="speaker-img" alt="Apóstolo Rei Vaso.">
+          </div>
+          <div class="speaker-info">
+            <h4>Apóstolo Rei Vaso.</h4>
+            <span class="speaker-role">Preletor</span>
+            <span class="speaker-org">CEM</span>
+          </div>
+          <p>Referência em evangelismo estratégico e plantação de igrejas.</p>
+        </div>
+        <div class="speaker-card" data-reveal>
+          <div class="speaker-photo">
+            <img src="images/pregadores/07.png" class="speaker-img" alt="Profetisa Mimi Domingas TChionga">
+          </div>
+          <div class="speaker-info">
+            <h4>Profetisa Mimi Domingas TChionga</h4>
+            <span class="speaker-role">Preletora</span>
+            <span class="speaker-org">CEM</span>
+          </div>
+          <p>Missionária experiente na mobilização para a causa de Cristo.</p>
+        </div>
+        <div class="speaker-card" data-reveal>
+          <div class="speaker-photo">
+            <img src="images/pregadores/08.png" class="speaker-img" alt="Pr Tilson">
+          </div>
+          <div class="speaker-info">
+            <h4>Pr Tilson</h4>
+            <span class="speaker-role">Preletor</span>
+            <span class="speaker-org">CEM</span>
+          </div>
+          <p>Voz atuante na liderança pastoral e no ensino bíblico aprofundado.</p>
+        </div>
+        <div class="speaker-card" data-reveal>
+          <div class="speaker-photo">
+            <img src="images/pregadores/09.png" class="speaker-img" alt="Ismae Yambi">
+          </div>
+          <div class="speaker-info">
+            <h4>Ismae Yambi</h4>
+            <span class="speaker-role">Preletor</span>
+            <span class="speaker-org">CEM</span>
+          </div>
+          <p>Dedicado ao ensino transformador e compromisso com missões locais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHT TALKS -->
+  <section class="section section-highlights section-light" data-reveal>
+    <div class="container">
+      <p class="section-label">DESTAQUES</p>
+      <h2 class="section-title">Inspirador, prático e relevante</h2>
+      <p class="section-desc">Alguns dos melhores momentos das edições anteriores do CEM.</p>
+    </div>
+    <div class="container">
+      <div class="talks-grid">
+        <div class="talk-card">
+          <span class="talk-tag">2025</span>
+          <h4>A Urgência da Grande Comissão</h4>
+          <p>Pastor Mata Mourisca</p>
+        </div>
+        <div class="talk-card">
+          <span class="talk-tag">2025</span>
+          <h4>O Poder do Evangelismo nas Ruas</h4>
+          <p>Pastor João Luvumbo</p>
+        </div>
+        <div class="talk-card">
+          <span class="talk-tag">2024</span>
+          <h4>Mulheres na Missão</h4>
+          <p>Dra. Sílvia Mendes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section-testimonials" data-reveal>
+    <div class="container">
+      <p class="section-label">IMPACTO</p>
+      <h2 class="section-title">O que os participantes<br>disseram</h2>
+    </div>
+    <div class="container">
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-reveal>
+          <p>"Participar do CEM mudou a minha perspectiva sobre o evangelismo. Saí das muralhas da igreja e descobri que as ruas são o nosso altar."</p>
+          <div class="testimonial-author">
+            <strong>João Sebastião</strong>
+            <span>Participante • 2.ª Edição</span>
+          </div>
+        </div>
+        <div class="testimonial-card" data-reveal>
+          <p>"Nunca imaginei que um congresso pudesse ter um dia inteiro dedicado a evangelizar nas ruas. O CEM é prático, não é só teoria."</p>
+          <div class="testimonial-author">
+            <strong>Maria Fernando</strong>
+            <span>Líder de Jovens • 1.ª Edição</span>
+          </div>
+        </div>
+        <div class="testimonial-card" data-reveal>
+          <p>"Como pastor, o CEM renovou o meu fogo. Ver jovens a pregarem nas ruas com tanta ousadia encheu o meu coração de esperança para Angola."</p>
+          <div class="testimonial-author">
+            <strong>Pastor Pedro Chipindo</strong>
+            <span>Igreja Baptista do Lubango</span>
+          </div>
+        </div>
+        <div class="testimonial-card" data-reveal>
+          <p>"O CEM não é um congresso comum. É um mover de Deus. Todo cristão em Angola precisa viver esta experiência pelo menos uma vez."</p>
+          <div class="testimonial-author">
+            <strong>Ana Paula</strong>
+            <span>Líder de Louvor • 2.ª Edição</span>
+          </div>
+        </div>
+        <div class="testimonial-card" data-reveal>
+          <p>"Participei online na 2.ª edição e senti-me tão envolvida como se estivesse lá. O ensino é profundo e o ambiente espiritual é palpável."</p>
+          <div class="testimonial-author">
+            <strong>Helena K.</strong>
+            <span>Participante Online • 2.ª Edição</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VENUE — hatch immersive style -->
+  <section class="section section-venue" data-reveal>
+    <div class="venue-cover">
+      <div class="venue-overlay"></div>
+      <div class="container venue-foreground">
+        <div class="venue-card">
+          <p class="venue-label">O LOCAL</p>
+          <h2 class="venue-name">Igreja Getsêmani</h2>
+          <p class="venue-desc">O coração do CEM bate na Igreja Getsêmani, no Lubango, Huíla — um espaço de adoração que se transforma num centro de ensino, intercessão e envio missionário.</p>
+          <div class="venue-meta">
+            <span class="venue-addr">Lubango, Huíla, Angola</span>
+            <span class="venue-sep">•</span>
+            <span class="venue-cap">Indoor + Outdoor • 500+ lugares</span>
+          </div>
+          <a href="https://maps.google.com/maps?q=Igreja+Gets%C3%A9mani+Lubango+Angola" target="_blank" class="btn btn-primary btn-small">Google Maps →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKET / INSCRIÇÃO -->
+  <section class="section section-tickets section-light" data-reveal>
+    <div class="container">
+      <p class="section-label">INSCRIÇÃO</p>
+      <h2 class="section-title">Garante o teu lugar</h2>
+      <p class="section-desc">Restam poucas vagas. Inscreve-te agora e sê parte deste mover.</p>
+    </div>
+    <div class="container">
+      <div class="tickets-grid">
+        <div class="ticket-card featured">
+          <span class="ticket-badge">Grátis</span>
+          <h3>Presencial</h3>
+          <div class="ticket-price">Grátis<span>Oferta Voluntária</span></div>
+          <ul>
+            <li>✓ Acesso a todos os dias</li>
+            <li>✓ Participação no evangelismo</li>
+            <li>✓ Kit do participante</li>
+            <li>✓ Alimentação incluída</li>
+            <li>✓ Certificado de participação</li>
+          </ul>
+          <a href="inscricao.html" class="btn btn-primary btn-full">Inscreve-te agora</a>
+          <span class="ticket-left">&lt; 50 vagas restantes</span>
+        </div>
+        <div class="ticket-card">
+          <span class="ticket-badge cheio-badge">Esgotado</span>
+          <h3>Online</h3>
+          <div class="ticket-price">Grátis<span>Streaming ao vivo</span></div>
+          <ul>
+            <li>✓ Transmissão ao vivo</li>
+            <li>✓ Gravações das sessões</li>
+            <li>✓ Material digital</li>
+            <li>— Kit do participante</li>
+            <li>✓ Certificado digital</li>
+          </ul>
+          <span class="btn btn-outline btn-full disabled" style="opacity:0.4;pointer-events:none;">Esgotado</span>
+          <span class="ticket-left">Inscrições encerradas</span>
+        </div>
+      </div>
+      <div class="ticket-note">
+        <p>Métodos de pagamento aceites: Transferência Bancária, Multicaixa, Dinheiro, Pay with Invoice</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER — hatch style -->
+  <section class="newsletter-section" data-reveal>
+    <div class="container">
+      <div class="newsletter-card">
+        <div class="newsletter-content">
+          <span class="newsletter-label">MANTÉM-TE ATUALIZADO</span>
+          <h2 class="newsletter-title">Fica atento às<br>novidades do CEM</h2>
+          <p class="newsletter-desc">Sê o primeiro a saber sobre as inscrições, a programação, os pregadores confirmados e tudo o que está a acontecer para a 3.ª edição.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="newsletter-row">
+              <input type="text" placeholder="Nome" class="newsletter-input" required>
+              <input type="text" placeholder="Apelido" class="newsletter-input" required>
+            </div>
+            <div class="newsletter-row">
+              <input type="email" placeholder="O teu melhor e-mail" class="newsletter-input" required>
+              <button type="submit" class="btn btn-primary newsletter-btn">Inscrever-me</button>
+            </div>
+          </form>
+          <div class="form-success" id="newsletterSuccess">
+            <div class="check">✓</div>
+            <h3 style="margin-bottom:8px;">Inscrição confirmada!</h3>
+            <p>Recebemos o teu interesse. Manter-te-emos atualizado sobre todas as novidades do CEM 2026.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="images/2026.png" alt="CEM 2026 Logo" class="logo-img">
+          </a>
+          <p>Mobilizar, capacitar e enviar crentes para cumprir a Grande Comissão. Um movimento da Igreja Getsêmani, Lubango, Angola.</p>
+          <div class="footer-social">
+            <a href="https://facebook.com/cemcongresso" target="_blank" aria-label="Facebook">FB</a>
+            <a href="https://instagram.com/cemcongresso" target="_blank" aria-label="Instagram">IG</a>
+            <a href="https://youtube.com/@cemcongresso" target="_blank" aria-label="YouTube">YT</a>
+            <a href="https://wa.me/+244900000000" target="_blank" aria-label="WhatsApp">WP</a>
+          </div>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="congresso.html">Programa</a></li>
+            <li><a href="parcerias.html">Parceiros</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="live.html">Ao Vivo</a></li>
+            <li><a href="inscricao.html">Inscrições</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contactos</h4>
+          <ul>
+            <li><span class="ci">→</span> Igreja Getsêmani, Lubango</li>
+            <li><span class="ci">→</span> +244 900 000 000</li>
+            <li><span class="ci">→</span> cem@igrejagetsemani.org</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 CEM — Congresso de Evangelismo e Missões</span>
+        <span>Igreja Getsêmani • Lubango, Huíla, Angola</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop">↑</button>
+
+  <!-- SPEAKER MODAL -->
+  <div class="modal-overlay" id="speakerModal" role="dialog" aria-modal="true" aria-labelledby="modalSpeakerName">
+    <div class="modal-container">
+      <button class="modal-close" id="modalClose" aria-label="Fechar detalhes do pregador">&times;</button>
+      <div class="modal-content">
+        <div class="modal-photo">
+          <img id="modalSpeakerImg" src="" alt="">
+        </div>
+        <div class="modal-info">
+          <span id="modalSpeakerRole" class="modal-role"></span>
+          <h3 id="modalSpeakerName" class="modal-name"></h3>
+          <span id="modalSpeakerOrg" class="modal-org"></span>
+          <p id="modalSpeakerBio" class="modal-bio"></p>
+          <div id="modalSpeakerDetails" class="modal-details"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/world-path.js"></script>
+  <script src="js/particle-map.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
