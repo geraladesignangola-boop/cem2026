@@ -457,10 +457,9 @@
             <li>✓ Certificado de participação</li>
           </ul>
           <a href="inscricao.html" class="btn btn-primary btn-full">Inscreve-te agora</a>
-          <span class="ticket-left">&lt; 50 vagas restantes</span>
         </div>
         <div class="ticket-card">
-          <span class="ticket-badge cheio-badge">Esgotado</span>
+          <span class="ticket-badge">Grátis</span>
           <h3>Online</h3>
           <div class="ticket-price">Grátis<span>Streaming ao vivo</span></div>
           <ul>
@@ -470,12 +469,9 @@
             <li>— Kit do participante</li>
             <li>✓ Certificado digital</li>
           </ul>
-          <span class="btn btn-outline btn-full disabled" style="opacity:0.4;pointer-events:none;">Esgotado</span>
-          <span class="ticket-left">Inscrições encerradas</span>
+          <a href="inscricao.html" class="btn btn-outline btn-full">Inscreve-te agora</a>
+          <span class="ticket-left">Vagas disponíveis</span>
         </div>
-      </div>
-      <div class="ticket-note">
-        <p>Métodos de pagamento aceites: Transferência Bancária, Multicaixa, Dinheiro, Pay with Invoice</p>
       </div>
     </div>
   </section>
@@ -490,11 +486,12 @@
           <p class="newsletter-desc">Sê o primeiro a saber sobre as inscrições, a programação, os pregadores confirmados e tudo o que está a acontecer para a 3.ª edição.</p>
           <form class="newsletter-form" id="newsletterForm">
             <div class="newsletter-row">
-              <input type="text" placeholder="Nome" class="newsletter-input" required>
-              <input type="text" placeholder="Apelido" class="newsletter-input" required>
+              <input type="text" id="nlNome" placeholder="Nome" class="newsletter-input" required>
+              <input type="text" id="nlApelido" placeholder="Apelido" class="newsletter-input" required>
             </div>
             <div class="newsletter-row">
-              <input type="email" placeholder="O teu melhor e-mail" class="newsletter-input" required>
+              <input type="email" id="nlEmail" placeholder="O teu melhor e-mail" class="newsletter-input" required>
+              <input type="hidden" id="submittedAt">
               <button type="submit" class="btn btn-primary newsletter-btn">Inscrever-me</button>
             </div>
           </form>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
@@ -13,8 +13,7 @@
   <header class="header">
     <div class="container">
       <a href="index.html" class="logo">
-        <span class="logo-icon">C</span>
-        <span class="logo-text">Congresso de Evangelismo <small>e Missões</small></span>
+        <img src="images/2026.png" alt="CEM 2026 Logo" class="logo-img">
       </a>
       <nav class="nav-desktop">
         <a href="index.html">Início</a>
@@ -127,6 +126,7 @@
             <label for="regComments">Observações</label>
             <textarea id="regComments" rows="2" placeholder="Necessidades especiais, grupos, etc."></textarea>
           </div>
+          <input type="hidden" id="submittedAt">
           <button type="submit" class="btn btn-primary btn-full">Confirmar inscrição</button>
           <p style="font-size:0.7rem;color:var(--muted);margin-top:12px;text-align:center;">Os teus dados estão seguros e serão usados apenas para comunicação do CEM.</p>
         </form>
@@ -145,10 +145,18 @@
       <span class="section-label">Partilha</span>
       <h2>Chama outros!</h2>
       <p style="max-width:500px;margin:0 auto 2.5rem;">Convidar outros é multiplicar o impacto. Partilha com a tua igreja, família e amigos.</p>
-      <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;">
-        <a href="https://wa.me/?text=CEM%202026%20%E2%80%94%20Congresso%20de%20Evangelismo%20e%20Miss%C3%B5es%20%E2%80%94%2022%E2%80%9328%20de%20Junho%2C%20Lubango%2C%20Angola.%20Garante%20j%C3%A1%20o%20teu%20lugar%3A%20https%3A%2F%2Fcemcongresso.org" target="_blank" class="share-btn">Partilhar WhatsApp</a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcemcongresso.org" target="_blank" class="share-btn">Partilhar Facebook</a>
+      <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;" id="shareButtons">
+        <a id="shareWhatsApp" href="#" target="_blank" class="share-btn">Partilhar WhatsApp</a>
+        <a id="shareFacebook" href="#" target="_blank" class="share-btn">Partilhar Facebook</a>
       </div>
+      <script>
+        (function() {
+          var pageUrl = encodeURIComponent(window.location.href);
+          var shareText = encodeURIComponent('CEM 2026 — Congresso de Evangelismo e Missões — 22–28 de Junho, Lubango, Angola. Garante já o teu lugar:');
+          document.getElementById('shareWhatsApp').href = 'https://wa.me/?text=' + shareText + '%20' + pageUrl;
+          document.getElementById('shareFacebook').href = 'https://www.facebook.com/sharer/sharer.php?u=' + pageUrl;
+        })();
+      </script>
     </div>
   </section>
 
@@ -157,8 +165,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="logo">
-            <span class="logo-icon">C</span>
-            <span class="logo-text">Congresso de Evangelismo <small>e Missões</small></span>
+            <img src="images/2026.png" alt="CEM 2026 Logo" class="logo-img">
           </a>
           <p>Mobilizar, capacitar e enviar crentes para cumprir a Grande Comissão. Igreja Getsêmani, Lubango, Angola.</p>
           <div class="footer-social">

@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+  window.CEM_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzMlU1cixHKgcO-v4KJN9Jd1L4h7ZCR_ZX6vbjN0gSp0MSWthtUUgKaPzxV3_4eNJOuuw/exec';
+
   // --- Mobile menu ---
   var menuToggle = document.getElementById('menuToggle');
   var menuOverlay = document.getElementById('menuOverlay');
@@ -54,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
       btn.innerHTML = 'A enviar...';
       btn.disabled = true;
 
-      // Collect form data
       var data = {};
       var inputs = form.querySelectorAll('input, select, textarea');
       inputs.forEach(function (input) {
@@ -69,7 +70,32 @@ document.addEventListener('DOMContentLoaded', function () {
       });
       data.submittedAt = new Date().toISOString();
 
-      // Persist to localStorage
+      if ((formId === 'registrationForm' || formId === 'partnerForm' || formId === 'newsletterForm') && window.CEM_SCRIPT_URL) {
+        fetch(window.CEM_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          body: JSON.stringify(data)
+        }).then(function () {
+          setTimeout(function () {
+            form.style.display = 'none';
+            if (success) success.classList.add('show');
+            btn.innerHTML = txt;
+            btn.disabled = false;
+          }, 800);
+        }).catch(function () {
+          var existing = JSON.parse(localStorage.getItem(storageKey) || '[]');
+          existing.push(data);
+          localStorage.setItem(storageKey, JSON.stringify(existing));
+          setTimeout(function () {
+            form.style.display = 'none';
+            if (success) success.classList.add('show');
+            btn.innerHTML = txt;
+            btn.disabled = false;
+          }, 800);
+        });
+        return;
+      }
+
       var existing = JSON.parse(localStorage.getItem(storageKey) || '[]');
       existing.push(data);
       localStorage.setItem(storageKey, JSON.stringify(existing));
